@@ -1,4 +1,4 @@
-# Swarm Intelligence
+# Роевой интеллект
 
 Репозиторий с практическими заданиями по дисциплине «Роевой интеллект»
 (УрФУ, ИРИТ-РтФ, преподаватель Третьяков С.А.).
@@ -16,7 +16,7 @@
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate ; Linux/Mac: source venv/bin/activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
