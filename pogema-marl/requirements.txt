@@ -1,0 +1,19 @@
+# Зависимости для pogema-marl (QMIX + MADDPG на POGEMA).
+#
+# ВАЖНО: ставить в ОТДЕЛЬНЫЙ venv ВНУТРИ папки pogema-marl/, а не в корневой .venv
+# репозитория. Причина: pogema жёстко требует gymnasium==0.28.1 и numpy<=1.26.4,
+# что конфликтует с остальными практическими (frozenlake/cliffwalking используют
+# gymnasium>=1.x, где CliffWalking доступен как v1). Держать всё в одном venv нельзя.
+#
+# Установка:
+#   cd pogema-marl
+#   python -m venv .venv
+#   source .venv/bin/activate        # Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# torch не пиним по версии - pip подберёт сборку под вашу систему (CPU/CUDA).
+# Обучение идёт и на CPU, но заметно быстрее на GPU (проверялось на RTX 3050 4GB).
+
+torch
+pogema==1.4.0
+matplotlib
