@@ -10,6 +10,13 @@
 - **PSO** — Particle Swarm Optimization
 - **ACO** — Ant Colony Optimization
 
+Также реализованы классические алгоритмы обучения с подкреплением:
+
+- **Q-Learning** (off-policy)
+- **SARSA** (on-policy)
+
+на среде FrozenLake-v1 (Gymnasium).
+
 ## Запуск
 
 Требуется Python 3. Установка окружения:
@@ -29,3 +36,11 @@ python ACO/main.py
 ```
 
 Во время анимации пробел ставит её на паузу/возобновляет.
+
+`frozenlake-rl/main.py` обучает Q-Learning и SARSA на FrozenLake-v1,
+показывает анимацию обучения, сохраняет графики в `frozenlake-rl/plots/`
+и демонстрирует выученную политику в отдельном окне:
+
+```bash
+python frozenlake-rl/main.py
+```
