@@ -15,7 +15,15 @@
 - **Q-Learning** (off-policy)
 - **SARSA** (on-policy)
 
-на среде FrozenLake-v1 (Gymnasium).
+на средах FrozenLake-v1 (`frozenlake-rl/`) и CliffWalking-v1 (`cliffwalking-rl/`)
+из Gymnasium.
+
+И алгоритмы глубокого мультиагентного обучения с подкреплением (`pogema-marl/`):
+
+- **QMIX** — value-based, монотонная факторизация Q через смешивающую сеть
+- **MADDPG** — policy-gradient, actor-critic с централизованными критиками
+
+на среде POGEMA (кооперативный мультиагентный поиск пути).
 
 ## Запуск
 
@@ -44,3 +52,32 @@ python ACO/main.py
 ```bash
 python frozenlake-rl/main.py
 ```
+
+`cliffwalking-rl/main.py` — то же самое (SARSA как основной алгоритм,
+Q-Learning для сравнения) на среде CliffWalking-v1, графики в
+`cliffwalking-rl/plots/`:
+
+```bash
+python cliffwalking-rl/main.py
+```
+
+## Мультиагентное обучение (POGEMA)
+
+`pogema-marl/` использует **отдельное виртуальное окружение внутри своей
+папки**, а не корневое: пакет `pogema` требует `gymnasium==0.28.1` и
+`numpy<=1.26.4`, что конфликтует с остальными практическими. Поэтому зависимости
+и venv у него свои (см. `pogema-marl/requirements.txt`):
+
+```bash
+cd pogema-marl
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```
+
+`main.py` обучает QMIX и MADDPG на POGEMA с анимацией в реальном времени
+(карта + график сходимости), затем показывает зацикленный повтор эволюции
+траекторий по эпизодам и сохраняет все графики (сходимость, success rate,
+epsilon/шум, тепловые карты, сравнение алгоритмов) в `pogema-marl/plots/`.
+Обучение идёт на GPU (CUDA), если доступен, иначе на CPU.
