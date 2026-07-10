@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-from config import ANIM_EPISODES, MOVING_AVG_WINDOW, SEED
+from config import ANIM_TARGET_FRAMES, MOVING_AVG_WINDOW, SEED
 from environment import make_env, get_env_info
 from visualize import ARROWS
 
@@ -36,10 +36,16 @@ def run_episode_sarsa(env, agent, state):
     return total_reward
 
 
-def animate_training(agent, run_episode, label="Q-Learning", color="blue"):
-    # анимация обучения в реальном времени: слева Q-таблица (обновляется по ходу
-    # обучения), справа сходимость. n_episodes ограничено ANIM_EPISODES,
-    # иначе анимация растянется на то же время, что и полное обучение (10000 эпизодов)
+def animate_training(agent, run_episode, n_episodes, label="Q-Learning", color="blue"):
+    # анимация - это и есть обучение (не отдельный черновой прогон): слева
+    # Q-таблица (обновляется по ходу обучения), справа сходимость.
+    # чтобы показать все n_episodes быстро, за один кадр анимации проходит не
+    # один эпизод, а целая пачка (episodes_per_frame) - иначе на 10000 эпизодов
+    # либо анимация идет вечность, либо обрывается на первых процентах обучения,
+    # толком не успев показать, как агент выходит на сходимость
+    episodes_per_frame = max(1, n_episodes // ANIM_TARGET_FRAMES)
+    n_frames = n_episodes // episodes_per_frame
+
     env = make_env()
     state, info = env.reset(seed=SEED)
 
@@ -52,9 +58,10 @@ def animate_training(agent, run_episode, label="Q-Learning", color="blue"):
     ax1.set_xlabel("Действие")
     ax1.set_ylabel("Состояние")
 
-    convergence_history = []
+    rewards_history = []
+    epsilon_history = []
     convergence_line, = ax2.plot([], [], color=color, label=label)
-    ax2.set_xlim(0, ANIM_EPISODES)
+    ax2.set_xlim(0, n_episodes)
     ax2.set_ylim(-0.1, 1.1)
     ax2.set_xlabel("Эпизод")
     ax2.set_ylabel(f"Награда (скользящее среднее, окно={MOVING_AVG_WINDOW})")
@@ -63,26 +70,26 @@ def animate_training(agent, run_episode, label="Q-Learning", color="blue"):
 
     def update(frame):
         nonlocal state
-        total_reward = run_episode(env, agent, state)
-        agent.decay_epsilon()
-        state, info = env.reset()
+        for _ in range(episodes_per_frame):
+            total_reward = run_episode(env, agent, state)
+            agent.decay_epsilon()
+            state, info = env.reset()
+            rewards_history.append(total_reward)
+            epsilon_history.append(agent.epsilon)
 
         # тепловая карта перерисовывается с учетом текущего разброса Q-значений
         im.set_data(agent.q_table)
         im.set_clim(agent.q_table.min(), agent.q_table.max())
 
-        convergence_history.append(total_reward)
-        smoothed = np.convolve(
-            convergence_history,
-            np.ones(min(len(convergence_history), MOVING_AVG_WINDOW)) / min(len(convergence_history), MOVING_AVG_WINDOW),
-            mode="valid",
-        )
+        window = min(len(rewards_history), MOVING_AVG_WINDOW)
+        smoothed = np.convolve(rewards_history, np.ones(window) / window, mode="valid")
         convergence_line.set_data(range(len(smoothed)), smoothed)
 
-        ax1.set_title(f"{label}: Q-таблица | эпизод {frame + 1} | epsilon={agent.epsilon:.2f}")
+        episode_no = len(rewards_history)
+        ax1.set_title(f"{label}: Q-таблица | эпизод {episode_no}/{n_episodes} | epsilon={agent.epsilon:.3f}")
         return im, convergence_line
 
-    anim = animation.FuncAnimation(fig, update, frames=ANIM_EPISODES, interval=50, repeat=False)
+    anim = animation.FuncAnimation(fig, update, frames=n_frames, interval=30, repeat=False)
     anim.running = True
 
     # пауза по пробелу (тот же прием, что и в анимациях ACO/PSO)
@@ -98,3 +105,4 @@ def animate_training(agent, run_episode, label="Q-Learning", color="blue"):
     plt.tight_layout()
     plt.show()
     env.close()
+    return rewards_history, epsilon_history
