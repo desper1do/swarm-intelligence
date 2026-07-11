@@ -1,0 +1,68 @@
+SARSA | Ep  200 | AvgR(last 100): -662.58 | ε: 0.819
+SARSA | Ep  400 | AvgR(last 100): -507.42 | ε: 0.670
+SARSA | Ep  600 | AvgR(last 100): -325.62 | ε: 0.549
+SARSA | Ep  800 | AvgR(last 100): -195.85 | ε: 0.449
+SARSA | Ep 1000 | AvgR(last 100): -131.31 | ε: 0.368
+SARSA | Ep 1200 | AvgR(last 100): -63.75 | ε: 0.301
+SARSA | Ep 1400 | AvgR(last 100): -46.11 | ε: 0.246
+SARSA | Ep 1600 | AvgR(last 100): -27.28 | ε: 0.202
+SARSA | Ep 1800 | AvgR(last 100): -22.71 | ε: 0.165
+SARSA | Ep 2000 | AvgR(last 100): -11.77 | ε: 0.135
+SARSA | Ep 2200 | AvgR(last 100): -1.93 | ε: 0.111
+SARSA | Ep 2400 | AvgR(last 100): 0.48 | ε: 0.091
+SARSA | Ep 2600 | AvgR(last 100): 2.29 | ε: 0.074
+SARSA | Ep 2800 | AvgR(last 100): 3.58 | ε: 0.061
+SARSA | Ep 3000 | AvgR(last 100): 4.49 | ε: 0.050
+SARSA | Ep 3200 | AvgR(last 100): 5.90 | ε: 0.041
+SARSA | Ep 3400 | AvgR(last 100): 5.82 | ε: 0.033
+SARSA | Ep 3600 | AvgR(last 100): 6.53 | ε: 0.027
+SARSA | Ep 3800 | AvgR(last 100): 6.78 | ε: 0.022
+SARSA | Ep 4000 | AvgR(last 100): 6.66 | ε: 0.018
+SARSA | Ep 4200 | AvgR(last 100): 6.64 | ε: 0.015
+SARSA | Ep 4400 | AvgR(last 100): 7.93 | ε: 0.012
+SARSA | Ep 4600 | AvgR(last 100): 6.83 | ε: 0.010
+SARSA | Ep 4800 | AvgR(last 100): 7.77 | ε: 0.010
+SARSA | Ep 5000 | AvgR(last 100): 7.26 | ε: 0.010
+Q-Learning | Ep  200 | AvgR(last 100): -655.33 | ε: 0.819
+Q-Learning | Ep  400 | AvgR(last 100): -472.09 | ε: 0.670
+Q-Learning | Ep  600 | AvgR(last 100): -283.19 | ε: 0.549
+Q-Learning | Ep  800 | AvgR(last 100): -125.65 | ε: 0.449
+Q-Learning | Ep 1000 | AvgR(last 100): -64.00 | ε: 0.368
+Q-Learning | Ep 1200 | AvgR(last 100): -25.05 | ε: 0.301
+Q-Learning | Ep 1400 | AvgR(last 100): -14.46 | ε: 0.246
+Q-Learning | Ep 1600 | AvgR(last 100): -7.71 | ε: 0.202
+Q-Learning | Ep 1800 | AvgR(last 100): -5.63 | ε: 0.165
+Q-Learning | Ep 2000 | AvgR(last 100): -2.65 | ε: 0.135
+Q-Learning | Ep 2200 | AvgR(last 100): -0.01 | ε: 0.111
+Q-Learning | Ep 2400 | AvgR(last 100): 3.27 | ε: 0.091
+Q-Learning | Ep 2600 | AvgR(last 100): 3.28 | ε: 0.074
+Q-Learning | Ep 2800 | AvgR(last 100): 5.75 | ε: 0.061
+Q-Learning | Ep 3000 | AvgR(last 100): 5.01 | ε: 0.050
+Q-Learning | Ep 3200 | AvgR(last 100): 5.36 | ε: 0.041
+Q-Learning | Ep 3400 | AvgR(last 100): 6.89 | ε: 0.033
+Q-Learning | Ep 3600 | AvgR(last 100): 6.88 | ε: 0.027
+Q-Learning | Ep 3800 | AvgR(last 100): 6.58 | ε: 0.022
+Q-Learning | Ep 4000 | AvgR(last 100): 6.88 | ε: 0.018
+Q-Learning | Ep 4200 | AvgR(last 100): 6.92 | ε: 0.015
+Q-Learning | Ep 4400 | AvgR(last 100): 7.43 | ε: 0.012
+Q-Learning | Ep 4600 | AvgR(last 100): 7.01 | ε: 0.010
+Q-Learning | Ep 4800 | AvgR(last 100): 7.75 | ε: 0.010
+Q-Learning | Ep 5000 | AvgR(last 100): 7.13 | ε: 0.010
+REINFORCE | Ep  200 | AvgR(last 100): -678.57
+REINFORCE | Ep  400 | AvgR(last 100): -418.32
+REINFORCE | Ep  600 | AvgR(last 100): -240.05
+REINFORCE | Ep  800 | AvgR(last 100): -209.36
+REINFORCE | Ep 1000 | AvgR(last 100): -204.59
+REINFORCE | Ep 1200 | AvgR(last 100): -203.24
+REINFORCE | Ep 1400 | AvgR(last 100): -201.80
+REINFORCE | Ep 1600 | AvgR(last 100): -201.98
+REINFORCE | Ep 1800 | AvgR(last 100): -200.99
+REINFORCE | Ep 2000 | AvgR(last 100): -200.81
+REINFORCE | Ep 2200 | AvgR(last 100): -200.45
+REINFORCE | Ep 2400 | AvgR(last 100): -200.18
+REINFORCE | Ep 2600 | AvgR(last 100): -200.09
+REINFORCE | Ep 2800 | AvgR(last 100): -200.09
+REINFORCE | Ep 3000 | AvgR(last 100): -200.00
+
+Итог: SARSA=7.63 | Q-Learning=7.71 | REINFORCE=-200.00
+Графики сохранены в plots/: comparison_curves.png, final_rewards_bar.png

@@ -1,0 +1,165 @@
+
+=== Эксперимент: alpha (при epsilon_decay=0.999) ===
+Q-Learning | Ep  200 | AvgR(last 100): -693.92 | ε: 0.819
+Q-Learning | Ep  400 | AvgR(last 100): -574.94 | ε: 0.670
+Q-Learning | Ep  600 | AvgR(last 100): -501.22 | ε: 0.549
+Q-Learning | Ep  800 | AvgR(last 100): -436.99 | ε: 0.449
+Q-Learning | Ep 1000 | AvgR(last 100): -371.92 | ε: 0.368
+Q-Learning | Ep 1200 | AvgR(last 100): -308.38 | ε: 0.301
+Q-Learning | Ep 1400 | AvgR(last 100): -262.26 | ε: 0.246
+Q-Learning | Ep 1600 | AvgR(last 100): -228.72 | ε: 0.202
+Q-Learning | Ep 1800 | AvgR(last 100): -215.06 | ε: 0.165
+Q-Learning | Ep 2000 | AvgR(last 100): -185.45 | ε: 0.135
+Q-Learning | Ep 2200 | AvgR(last 100): -159.24 | ε: 0.111
+Q-Learning | Ep 2400 | AvgR(last 100): -147.61 | ε: 0.091
+Q-Learning | Ep 2600 | AvgR(last 100): -143.43 | ε: 0.074
+Q-Learning | Ep 2800 | AvgR(last 100): -115.94 | ε: 0.061
+Q-Learning | Ep 3000 | AvgR(last 100): -104.07 | ε: 0.050
+Q-Learning | Ep 3200 | AvgR(last 100): -104.43 | ε: 0.041
+Q-Learning | Ep 3400 | AvgR(last 100): -81.86 | ε: 0.033
+Q-Learning | Ep 3600 | AvgR(last 100): -71.34 | ε: 0.027
+Q-Learning | Ep 3800 | AvgR(last 100): -72.67 | ε: 0.022
+Q-Learning | Ep 4000 | AvgR(last 100): -63.83 | ε: 0.018
+Q-Learning | Ep 4200 | AvgR(last 100): -64.72 | ε: 0.015
+Q-Learning | Ep 4400 | AvgR(last 100): -43.98 | ε: 0.012
+Q-Learning | Ep 4600 | AvgR(last 100): -52.02 | ε: 0.010
+Q-Learning | Ep 4800 | AvgR(last 100): -41.56 | ε: 0.010
+Q-Learning | Ep 5000 | AvgR(last 100): -42.01 | ε: 0.010
+  alpha=0.01    | хвост обучения=-42.01 | жадная оценка=-178.73
+Q-Learning | Ep  200 | AvgR(last 100): -656.73 | ε: 0.819
+Q-Learning | Ep  400 | AvgR(last 100): -446.38 | ε: 0.670
+Q-Learning | Ep  600 | AvgR(last 100): -269.50 | ε: 0.549
+Q-Learning | Ep  800 | AvgR(last 100): -131.13 | ε: 0.449
+Q-Learning | Ep 1000 | AvgR(last 100): -63.00 | ε: 0.368
+Q-Learning | Ep 1200 | AvgR(last 100): -24.46 | ε: 0.301
+Q-Learning | Ep 1400 | AvgR(last 100): -13.08 | ε: 0.246
+Q-Learning | Ep 1600 | AvgR(last 100): -7.73 | ε: 0.202
+Q-Learning | Ep 1800 | AvgR(last 100): -2.92 | ε: 0.165
+Q-Learning | Ep 2000 | AvgR(last 100): -3.26 | ε: 0.135
+Q-Learning | Ep 2200 | AvgR(last 100): 0.89 | ε: 0.111
+Q-Learning | Ep 2400 | AvgR(last 100): 2.74 | ε: 0.091
+Q-Learning | Ep 2600 | AvgR(last 100): 5.21 | ε: 0.074
+Q-Learning | Ep 2800 | AvgR(last 100): 5.48 | ε: 0.061
+Q-Learning | Ep 3000 | AvgR(last 100): 5.95 | ε: 0.050
+Q-Learning | Ep 3200 | AvgR(last 100): 6.14 | ε: 0.041
+Q-Learning | Ep 3400 | AvgR(last 100): 5.85 | ε: 0.033
+Q-Learning | Ep 3600 | AvgR(last 100): 7.17 | ε: 0.027
+Q-Learning | Ep 3800 | AvgR(last 100): 6.88 | ε: 0.022
+Q-Learning | Ep 4000 | AvgR(last 100): 7.09 | ε: 0.018
+Q-Learning | Ep 4200 | AvgR(last 100): 7.15 | ε: 0.015
+Q-Learning | Ep 4400 | AvgR(last 100): 7.64 | ε: 0.012
+Q-Learning | Ep 4600 | AvgR(last 100): 6.99 | ε: 0.010
+Q-Learning | Ep 4800 | AvgR(last 100): 7.73 | ε: 0.010
+Q-Learning | Ep 5000 | AvgR(last 100): 7.17 | ε: 0.010
+  alpha=0.1     | хвост обучения=  7.17 | жадная оценка=  7.71
+Q-Learning | Ep  200 | AvgR(last 100): -601.79 | ε: 0.819
+Q-Learning | Ep  400 | AvgR(last 100): -171.88 | ε: 0.670
+Q-Learning | Ep  600 | AvgR(last 100): -77.55 | ε: 0.549
+Q-Learning | Ep  800 | AvgR(last 100): -40.84 | ε: 0.449
+Q-Learning | Ep 1000 | AvgR(last 100): -26.74 | ε: 0.368
+Q-Learning | Ep 1200 | AvgR(last 100): -14.05 | ε: 0.301
+Q-Learning | Ep 1400 | AvgR(last 100): -9.80 | ε: 0.246
+Q-Learning | Ep 1600 | AvgR(last 100): -3.80 | ε: 0.202
+Q-Learning | Ep 1800 | AvgR(last 100): -5.08 | ε: 0.165
+Q-Learning | Ep 2000 | AvgR(last 100): -0.55 | ε: 0.135
+Q-Learning | Ep 2200 | AvgR(last 100): 1.78 | ε: 0.111
+Q-Learning | Ep 2400 | AvgR(last 100): 3.51 | ε: 0.091
+Q-Learning | Ep 2600 | AvgR(last 100): 3.09 | ε: 0.074
+Q-Learning | Ep 2800 | AvgR(last 100): 4.50 | ε: 0.061
+Q-Learning | Ep 3000 | AvgR(last 100): 6.06 | ε: 0.050
+Q-Learning | Ep 3200 | AvgR(last 100): 5.47 | ε: 0.041
+Q-Learning | Ep 3400 | AvgR(last 100): 6.34 | ε: 0.033
+Q-Learning | Ep 3600 | AvgR(last 100): 6.72 | ε: 0.027
+Q-Learning | Ep 3800 | AvgR(last 100): 6.90 | ε: 0.022
+Q-Learning | Ep 4000 | AvgR(last 100): 7.23 | ε: 0.018
+Q-Learning | Ep 4200 | AvgR(last 100): 5.89 | ε: 0.015
+Q-Learning | Ep 4400 | AvgR(last 100): 7.65 | ε: 0.012
+Q-Learning | Ep 4600 | AvgR(last 100): 6.87 | ε: 0.010
+Q-Learning | Ep 4800 | AvgR(last 100): 7.32 | ε: 0.010
+Q-Learning | Ep 5000 | AvgR(last 100): 7.37 | ε: 0.010
+  alpha=0.5     | хвост обучения=  7.37 | жадная оценка=  7.69
+  -> лучшее значение alpha = 0.1 (жадная оценка 7.71)
+
+=== Эксперимент: epsilon_decay (при alpha=0.1) ===
+Q-Learning | Ep  200 | AvgR(last 100): -269.69 | ε: 0.134
+Q-Learning | Ep  400 | AvgR(last 100): -94.83 | ε: 0.018
+Q-Learning | Ep  600 | AvgR(last 100): -49.28 | ε: 0.010
+Q-Learning | Ep  800 | AvgR(last 100): -17.63 | ε: 0.010
+Q-Learning | Ep 1000 | AvgR(last 100): -6.34 | ε: 0.010
+Q-Learning | Ep 1200 | AvgR(last 100): 4.73 | ε: 0.010
+Q-Learning | Ep 1400 | AvgR(last 100): 4.43 | ε: 0.010
+Q-Learning | Ep 1600 | AvgR(last 100): 6.42 | ε: 0.010
+Q-Learning | Ep 1800 | AvgR(last 100): 6.39 | ε: 0.010
+Q-Learning | Ep 2000 | AvgR(last 100): 6.60 | ε: 0.010
+Q-Learning | Ep 2200 | AvgR(last 100): 7.62 | ε: 0.010
+Q-Learning | Ep 2400 | AvgR(last 100): 7.03 | ε: 0.010
+Q-Learning | Ep 2600 | AvgR(last 100): 7.08 | ε: 0.010
+Q-Learning | Ep 2800 | AvgR(last 100): 7.85 | ε: 0.010
+Q-Learning | Ep 3000 | AvgR(last 100): 7.65 | ε: 0.010
+Q-Learning | Ep 3200 | AvgR(last 100): 6.93 | ε: 0.010
+Q-Learning | Ep 3400 | AvgR(last 100): 7.44 | ε: 0.010
+Q-Learning | Ep 3600 | AvgR(last 100): 7.92 | ε: 0.010
+Q-Learning | Ep 3800 | AvgR(last 100): 7.52 | ε: 0.010
+Q-Learning | Ep 4000 | AvgR(last 100): 7.39 | ε: 0.010
+Q-Learning | Ep 4200 | AvgR(last 100): 7.31 | ε: 0.010
+Q-Learning | Ep 4400 | AvgR(last 100): 7.88 | ε: 0.010
+Q-Learning | Ep 4600 | AvgR(last 100): 7.07 | ε: 0.010
+Q-Learning | Ep 4800 | AvgR(last 100): 7.58 | ε: 0.010
+Q-Learning | Ep 5000 | AvgR(last 100): 7.26 | ε: 0.010
+  epsilon_decay=0.99    | хвост обучения=  7.26 | жадная оценка=  7.71
+Q-Learning | Ep  200 | AvgR(last 100): -678.85 | ε: 0.819
+Q-Learning | Ep  400 | AvgR(last 100): -410.79 | ε: 0.670
+Q-Learning | Ep  600 | AvgR(last 100): -254.60 | ε: 0.549
+Q-Learning | Ep  800 | AvgR(last 100): -119.00 | ε: 0.449
+Q-Learning | Ep 1000 | AvgR(last 100): -58.09 | ε: 0.368
+Q-Learning | Ep 1200 | AvgR(last 100): -22.17 | ε: 0.301
+Q-Learning | Ep 1400 | AvgR(last 100): -17.08 | ε: 0.246
+Q-Learning | Ep 1600 | AvgR(last 100): -7.88 | ε: 0.202
+Q-Learning | Ep 1800 | AvgR(last 100): -5.43 | ε: 0.165
+Q-Learning | Ep 2000 | AvgR(last 100): -0.41 | ε: 0.135
+Q-Learning | Ep 2200 | AvgR(last 100): 0.90 | ε: 0.111
+Q-Learning | Ep 2400 | AvgR(last 100): 1.85 | ε: 0.091
+Q-Learning | Ep 2600 | AvgR(last 100): 4.06 | ε: 0.074
+Q-Learning | Ep 2800 | AvgR(last 100): 6.39 | ε: 0.061
+Q-Learning | Ep 3000 | AvgR(last 100): 5.26 | ε: 0.050
+Q-Learning | Ep 3200 | AvgR(last 100): 5.27 | ε: 0.041
+Q-Learning | Ep 3400 | AvgR(last 100): 6.58 | ε: 0.033
+Q-Learning | Ep 3600 | AvgR(last 100): 6.55 | ε: 0.027
+Q-Learning | Ep 3800 | AvgR(last 100): 7.48 | ε: 0.022
+Q-Learning | Ep 4000 | AvgR(last 100): 6.73 | ε: 0.018
+Q-Learning | Ep 4200 | AvgR(last 100): 6.69 | ε: 0.015
+Q-Learning | Ep 4400 | AvgR(last 100): 7.66 | ε: 0.012
+Q-Learning | Ep 4600 | AvgR(last 100): 7.18 | ε: 0.010
+Q-Learning | Ep 4800 | AvgR(last 100): 7.38 | ε: 0.010
+Q-Learning | Ep 5000 | AvgR(last 100): 7.34 | ε: 0.010
+  epsilon_decay=0.999   | хвост обучения=  7.34 | жадная оценка=  7.71
+Q-Learning | Ep  200 | AvgR(last 100): -704.43 | ε: 0.905
+Q-Learning | Ep  400 | AvgR(last 100): -584.17 | ε: 0.819
+Q-Learning | Ep  600 | AvgR(last 100): -438.59 | ε: 0.741
+Q-Learning | Ep  800 | AvgR(last 100): -244.85 | ε: 0.670
+Q-Learning | Ep 1000 | AvgR(last 100): -126.47 | ε: 0.606
+Q-Learning | Ep 1200 | AvgR(last 100): -77.34 | ε: 0.549
+Q-Learning | Ep 1400 | AvgR(last 100): -60.69 | ε: 0.496
+Q-Learning | Ep 1600 | AvgR(last 100): -42.26 | ε: 0.449
+Q-Learning | Ep 1800 | AvgR(last 100): -29.60 | ε: 0.406
+Q-Learning | Ep 2000 | AvgR(last 100): -25.11 | ε: 0.368
+Q-Learning | Ep 2200 | AvgR(last 100): -18.85 | ε: 0.333
+Q-Learning | Ep 2400 | AvgR(last 100): -16.07 | ε: 0.301
+Q-Learning | Ep 2600 | AvgR(last 100): -9.48 | ε: 0.272
+Q-Learning | Ep 2800 | AvgR(last 100): -10.37 | ε: 0.247
+Q-Learning | Ep 3000 | AvgR(last 100): -6.94 | ε: 0.223
+Q-Learning | Ep 3200 | AvgR(last 100): -6.42 | ε: 0.202
+Q-Learning | Ep 3400 | AvgR(last 100): -4.38 | ε: 0.183
+Q-Learning | Ep 3600 | AvgR(last 100): -2.14 | ε: 0.165
+Q-Learning | Ep 3800 | AvgR(last 100): -1.63 | ε: 0.149
+Q-Learning | Ep 4000 | AvgR(last 100): -2.09 | ε: 0.135
+Q-Learning | Ep 4200 | AvgR(last 100): 0.07 | ε: 0.122
+Q-Learning | Ep 4400 | AvgR(last 100): 1.31 | ε: 0.111
+Q-Learning | Ep 4600 | AvgR(last 100): 1.66 | ε: 0.100
+Q-Learning | Ep 4800 | AvgR(last 100): 2.25 | ε: 0.091
+Q-Learning | Ep 5000 | AvgR(last 100): 3.85 | ε: 0.082
+  epsilon_decay=0.9995  | хвост обучения=  3.85 | жадная оценка=  7.71
+  -> лучшее значение epsilon_decay = 0.99 (жадная оценка 7.71)
+
+Оптимум: alpha=0.1, epsilon_decay=0.99
+Графики сохранены в plots/: exp_alpha.png, exp_epsilon_decay.png
